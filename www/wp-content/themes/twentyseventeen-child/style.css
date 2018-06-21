@@ -1,0 +1,149 @@
+/*
+Theme Name:     Twenty Seventeen Child
+Template:       twentyseventeen
+*/
+
+@import url("../twentyseventeen/style.css");
+
+.widget-area:before,
+.widget-area:after {
+    content: none;
+}
+
+.btn {
+	background-color: #222;
+	border: 0;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 800;
+	line-height: 1;
+	padding: 1em 2em;
+	text-shadow: none;
+	-webkit-transition: background 0.2s;
+	transition: background 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+	background: #767676;
+}
+
+.site-footer .widget-area {
+	padding-bottom: 2em;
+	padding-top: 2em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.cart {
+	margin-bottom: 20px;
+}
+
+.footer-widget-2 button {
+	padding: 0.75em 1em;
+	margin-top: 1em;
+	display: block;
+}
+
+.footer-widget-2 p {
+	margin: 0 0 .5em;
+}
+
+.site-footer .widget-title {display: none;}
+
+#text-4 {display: none;}
+
+.btn:hover {
+	color: #fff !important;
+	box-shadow: none !important;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 9;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup a.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: none !important;
+}
+.popup a.close:hover {
+  color: #bbb;
+  box-shadow: none !important;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (min-width: 48em) {
+	.site-footer .widget-column.footer-widget-1 {
+		float: none;
+		width: auto;
+		order: 1;
+	}
+	.site-footer .widget-column.footer-widget-2 {
+		float: none;
+		width: auto;
+		order: 2;
+	}
+}
+
+@media only screen and (max-width: 600px) { 
+	.site-footer .widget-area {
+		flex-wrap: wrap-reverse;
+	}
+	#text-2 {display: none;}
+	#text-4 {display: block;}
+	.footer-widget-2 {width: 100%;}
+	
+	.btn {
+		width: 100%;
+		display: block;
+		margin: 1em 0;
+		text-align: center;
+	}
+	.box, .popup {
+    	width: 80%;
+  	}
+}

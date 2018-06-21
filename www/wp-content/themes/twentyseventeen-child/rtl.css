@@ -3195,6 +3195,15 @@ object {
 	direction: initial;
 	text-align: right;
 }
+.star-rating {
+	width: 5.3em !important;
+}
+.star-rating span {
+	left: initial;
+}
+.star-rating span:before {
+	left: initial;
+}
 /*--------------------------------------------------------------
 19.0 Media Queries
 --------------------------------------------------------------*/
